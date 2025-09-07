@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -10,4 +11,8 @@
   :root {
     --foreground-rgb: 255, 255, 255;
   }
+}
+
+body {
+  padding: 1rem;
 }
